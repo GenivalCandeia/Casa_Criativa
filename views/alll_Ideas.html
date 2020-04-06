@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {% for idea in ideas%}
+
+    <div class="idea">  
+       
+        <img 
+            src="{{idea.img}}" 
+            alt="Imagem de {{idea.title}}">
+
+        <div id="content">
+            <h3>{{idea.title}}</h3>
+            <p>{{idea.category}}</p>
+            <div id="description">
+                {{idea.description}}
+            </div>
+            <a href="{{idea.url}}" target="_blank">Ir para a Ideia</a>
+        </div>        
+    
+</div>
+{% endfor %}
+
+</body>
+</html>
+          
